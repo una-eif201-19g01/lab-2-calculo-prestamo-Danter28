@@ -41,8 +41,21 @@ float CalculoPrestamo::calcularInteresMensual(float balance, float tasaAnual) {
 }
 
 string CalculoPrestamo::reporteCalculoPrestamo(string tiempo, string porcentaje){
-    
-}
+    int j=1;
+    int64_t balanceInicial=getMonto();   
+    float interes=calcularInteresMensual(balanceInicial,(obtenerPorcentaje(porcentaje)));
+    int64_t balanceNuevo=balanceInicial+interes;
+    int cantMeses= calcularTiempoEnMeses(tiempo);
+    std::stringstream ss;
+    ss<<"tasa ["<<porcentaje<<"], Mes ["<<j<<"], balance inicial ["<<
+            balanceInicial<<"], interes ["<<interes<<"], balance nuevo ["<<
+            balanceNuevo<<"]\n";    
+    for(j;j<=cantMeses;j++){
+        return ss.str();
+        balanceInicial=balanceNuevo;
+    }
+        
+    }
 
 float CalculoPrestamo::getMonto(){return monto;}
 
