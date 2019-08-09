@@ -1,10 +1,7 @@
 //
 // Created by Maikol Guzman  on 2019-08-08CalculoPrestamo::
 //
-/*find()
-  substr( , )
-  std::stof("8.50")
-  std::stoi("8")*/
+
 
 #include <iostream>
 #include "CalculoPrestamo.h"
@@ -19,7 +16,7 @@ CalculoPrestamo::CalculoPrestamo(int64_t monto) {
 float CalculoPrestamo::obtenerPorcentaje(string porcentaje) {
     int posicion= porcentaje.find(%);
     string subString =porcentaje.substr(0,posicion);
-    return (stof(subString));
+    return (stof(subString)/100);
     
 }
 
@@ -40,9 +37,11 @@ int CalculoPrestamo::calcularTiempoEnMeses(string tiempo) {
 }
 
 float CalculoPrestamo::calcularInteresMensual(float balance, float tasaAnual) {
+    return (balance*(tasaAnual/12));
 }
 
-string CalculoPrestamo::reporteCalculoPrestamo(string tiempo, string porcentaje) {
+string CalculoPrestamo::reporteCalculoPrestamo(string tiempo, string porcentaje){
+    
 }
 
 float CalculoPrestamo::getMonto(){return monto;}
