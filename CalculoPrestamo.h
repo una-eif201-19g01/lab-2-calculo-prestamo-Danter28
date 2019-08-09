@@ -8,6 +8,15 @@
 
 #include <cstdint>
 #include <string>
-
-
+class CalculoPrestamo{
+private:
+    float monto;
+    float obtenerPorcentaje();
+    int calcularTiempoEnMeses();
+    float calcularInteresMensual();
+public:
+    CalculoPrestamo();
+    CalculoPrestamo();
+    reporteCalculoPrestamo();
+};
 #endif //CALCULOPRESTAMO_CALCULOPRESTAMO_H
