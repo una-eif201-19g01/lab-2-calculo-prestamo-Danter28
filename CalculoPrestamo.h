@@ -8,15 +8,19 @@
 
 #include <cstdint>
 #include <string>
+using std::string;
 class CalculoPrestamo{
 private:
     float monto;
-    float obtenerPorcentaje();
-    int calcularTiempoEnMeses();
-    float calcularInteresMensual();
+    float obtenerPorcentaje(string );
+    int calcularTiempoEnMeses(string);
+    float calcularInteresMensual(float,float);
 public:
     CalculoPrestamo();
-    CalculoPrestamo();
-    reporteCalculoPrestamo();
+    CalculoPrestamo(int64_t);
+    string reporteCalculoPrestamo(string, string);
+    float getMonto();
+    void setMonto(float);
+    
 };
 #endif //CALCULOPRESTAMO_CALCULOPRESTAMO_H
