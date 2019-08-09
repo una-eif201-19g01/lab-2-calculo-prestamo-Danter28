@@ -9,6 +9,7 @@
 #include <cstdint>
 #include <string>
 using std::string;
+using std::find;
 class CalculoPrestamo{
 private:
     float monto;
