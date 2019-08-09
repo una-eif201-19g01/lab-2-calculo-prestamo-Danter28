@@ -17,10 +17,26 @@ CalculoPrestamo::CalculoPrestamo(int64_t monto) {
 }
 
 float CalculoPrestamo::obtenerPorcentaje(string porcentaje) {
-    return std::stof(porcentaje.substrg(0,(porcentaje.find("%"))));
+    int posicion= porcentaje.find(%);
+    string subString =porcentaje.substr(0,posicion);
+    return (stof(subString));
+    
 }
 
 int CalculoPrestamo::calcularTiempoEnMeses(string tiempo) {
+    string subString;
+    int pos;
+    if(tiempo.find("A")!=-1){
+        pos=tiempo.find("A");
+        subString=tiempo.substr(0,pos);
+        return ((stoi(subString))*12);
+    }
+    else{
+        pos=tiempo.find("M");
+        subString=tiempo.substr(0,pos);
+        return (stoi(subString));
+    }
+        
 }
 
 float CalculoPrestamo::calcularInteresMensual(float balance, float tasaAnual) {
