@@ -14,10 +14,12 @@ using std::find;
 class CalculoPrestamo{
 private:
     float monto;
+    //metodos privados
     float obtenerPorcentaje(string );
     int calcularTiempoEnMeses(string);
     float calcularInteresMensual(float,float);
 public:
+    //metodos publicos
     CalculoPrestamo();
     CalculoPrestamo(int64_t);
     string reporteCalculoPrestamo(string, string);
