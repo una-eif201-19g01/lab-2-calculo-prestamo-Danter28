@@ -66,7 +66,7 @@ public:
     /**
      * Creates a string with the required information and later show it on screen
      * 
-     * @param receives a string type amount and annual rate.
+     * @param receives a string type tiempo and porcentaje.
      * @return string containing the information of the loan information 
      * on the disered format.
      */
