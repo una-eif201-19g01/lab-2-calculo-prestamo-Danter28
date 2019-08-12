@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/dante/OneDrive/Documentos/NetBeansProjects/lab-2-calculo-prestamo-Danter28/CalculoPrestamo.cpp
+iostream
+-
+CalculoPrestamo.h
+C:/Users/dante/OneDrive/Documentos/NetBeansProjects/lab-2-calculo-prestamo-Danter28/CalculoPrestamo.h
+
+C:/Users/dante/OneDrive/Documentos/NetBeansProjects/lab-2-calculo-prestamo-Danter28/CalculoPrestamo.h
+cstdint
+-
+string
+-
+sstream
+-
+
+C:/Users/dante/OneDrive/Documentos/NetBeansProjects/lab-2-calculo-prestamo-Danter28/main.cpp
+iostream
+-
+CalculoPrestamo.h
+C:/Users/dante/OneDrive/Documentos/NetBeansProjects/lab-2-calculo-prestamo-Danter28/CalculoPrestamo.h
+
