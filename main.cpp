@@ -1,3 +1,17 @@
+/*
+ * =====================================================================================
+ *
+ *       Filename:  main.cpp
+ *
+ *    Description: CalculoPrestamo
+ * 
+ *        Created:  09/08/2019
+ *
+ *         Author:  Danilo Alvarado Arce
+ *   Organization:  Universidad Nacional de Costa Rica
+ *
+ * =====================================================================================
+ */
 #include <iostream>
 #include "CalculoPrestamo.h"
 using std::cin;
