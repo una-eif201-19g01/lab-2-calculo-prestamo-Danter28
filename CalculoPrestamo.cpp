@@ -63,6 +63,7 @@ string CalculoPrestamo::reporteCalculoPrestamo(string tiempo, string porcentaje)
                 std::to_string (balanceNuevo) + "]\n";
        
         balanceInicial = balanceNuevo;
+        interes = calcularInteresMensual(balanceInicial, (obtenerPorcentaje(porcentaje)));
         balanceNuevo = balanceInicial + interes;
     }
  return tasaTexto;
