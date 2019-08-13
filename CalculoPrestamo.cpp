@@ -51,9 +51,9 @@ float CalculoPrestamo::calcularInteresMensual(float balance, float tasaAnual) {
 
 string CalculoPrestamo::reporteCalculoPrestamo(string tiempo, string porcentaje) {
     int contador = 1;
-    int64_t balanceInicial = getMonto();
+    float balanceInicial = getMonto();
     float interes = calcularInteresMensual(balanceInicial, (obtenerPorcentaje(porcentaje)));
-    int64_t balanceNuevo = balanceInicial + interes;
+	float balanceNuevo = balanceInicial + interes;
     int cantMeses = calcularTiempoEnMeses(tiempo);
     string tasaTexto;
 
