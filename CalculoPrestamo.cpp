@@ -61,10 +61,10 @@ string CalculoPrestamo::reporteCalculoPrestamo(string tiempo, string porcentaje)
         tasaTexto = tasaTexto + "tasa [" + porcentaje + "], Mes [" + std::to_string (contador) + "], balance inicial [" +
                 std::to_string(balanceInicial) + "], interes [" + std::to_string(interes) + "], balance nuevo [" +
                 std::to_string (balanceNuevo) + "]\n";
-        return tasaTexto;
+       
         balanceInicial = balanceNuevo;
     }
-
+ return tasaTexto;
 }
 
 float CalculoPrestamo::getMonto() {
