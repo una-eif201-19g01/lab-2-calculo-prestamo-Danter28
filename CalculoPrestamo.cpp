@@ -58,7 +58,7 @@ string CalculoPrestamo::reporteCalculoPrestamo(string tiempo, string porcentaje)
     string tasaTexto;
 
     for (contador; contador <= cantMeses; contador++) {
-        tasaTexto = "tasa [" + porcentaje + "], Mes [" + contador + "], balance inicial [" +
+        tasaTexto = tasaTexto + "tasa [" + porcentaje + "], Mes [" + contador + "], balance inicial [" +
                 balanceInicial + "], interes [" + interes + "], balance nuevo [" +
                 balanceNuevo + "]\n";
         return tasaTexto;
