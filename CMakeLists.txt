@@ -5,4 +5,4 @@ set(CMAKE_CXX_STANDARD 14)
 
 set(SOURCE_FILES main.cpp CalculoPrestamo.cpp CalculoPrestamo.h)
 
-add_executable(NumerosRacionales ${SOURCE_FILES})
+add_executable(CalculoPrestamo ${SOURCE_FILES})
